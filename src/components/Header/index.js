@@ -1,5 +1,5 @@
 import React from 'react';
-import {Navbar, Nav, NavDropdown, Container} from 'react-bootstrap';
+import {Navbar, Nav, NavDropdown, Container, Button} from 'react-bootstrap';
 import {NavLink, Link} from 'react-router-dom';
 
 const Header = () =>  {
@@ -23,6 +23,9 @@ const Header = () =>  {
                     </Nav>
                     <Nav>
                         {/* <Nav.Link href="#deets">SignIn</Nav.Link> */}
+                        <li className="nav-item">
+                            <Button variant="primary" size="sm">Refresh</Button>
+                        </li>
                         <li className="nav-item">
                             <NavLink to="/signin" className="nav-link">Signin</NavLink>
                         </li>

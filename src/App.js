@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Home from './container/Home';
 import Signin from './container/Signin';
 import Signup from './container/Signup';
+import bg_image from './images/background.jpg';
 
 const App = () => {
   return (

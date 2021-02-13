@@ -8,26 +8,42 @@ class AccDropdown extends Component {
     render() {
         const setData = setupData.data.envs;
         console.log(setData);
+
+        //finding distinct values
+        const unique = [...new Set(setData.map(item => item.type))];
+        console.log('Unique Setups: ', unique);
+
+        // const result = setData.filter(data => data.type == 'Dev');
+        // console.log('Filtered Data: ', result);
+
         return(
             <div className="acc-container">
                 <Accordion defaultActiveKey="0">
-                    <Card>
-                        <Accordion.Toggle as={Card.Header} eventKey="0">
-                        Click me!
-                        </Accordion.Toggle>
-                        <Accordion.Collapse eventKey="0">
-                            <SetupCards data={setData}/>
-                        </Accordion.Collapse>
-                    </Card>
-                    <Card>
+                    {
+                        unique && unique.map((item, index) => 
+                        <Card key={index}>
+                            <Accordion.Toggle as={Card.Header} eventKey={index+1}>
+                            {item}
+                            </Accordion.Toggle>
+                            <Accordion.Collapse eventKey={index+1}>
+                                <div style={{padding:'0px'}}>
+                                    <SetupCards data={setData.filter(data => data.type == item)} />
+                                </div>
+                                
+                            </Accordion.Collapse>
+                        </Card>
+                        )
+                    }
+
+
+                    {/* <Card>
                         <Accordion.Toggle as={Card.Header} eventKey="1">
                         Click me!
                         </Accordion.Toggle>
                         <Accordion.Collapse eventKey="1">
-                            {/* <SetupCards key={key} setupName={data.type}/> */}
                             <SetupCards data={setData}/>
                         </Accordion.Collapse>
-                    </Card>
+                    </Card> */}
                 </Accordion>
             </div>
         )

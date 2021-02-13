@@ -15,8 +15,8 @@ export const setupData={
 						"satus": "inprogress",
 						"sprintnumber": "",
 						"buildnumber": "12",
-						"starttime": "2021-01-11T09:47:53+0000Z",
-						"endtime": "2021-01-11T011:47:53+0000Z",
+						"startTime": "04/09/2020 14:00:00",
+						"endTime": "14/09/2020 16:20:30",
 						"installmode": "refresh_cd",
 						"milestones": [
 							{
@@ -57,8 +57,8 @@ export const setupData={
 						"satus": "inprogress",
 						"sprintnumber": "",
 						"buildnumber": "12",
-						"starttime": "2021-01-11T09:47:53+0000Z",
-						"endtime": "2021-01-11T011:47:53+0000Z",
+						"startTime": "04/09/2020 14:00:00",
+						"endTime": "14/09/2020 16:20:30",
 						"installmode": "refresh_cd",
 						"milestones": [
 							{
@@ -99,8 +99,50 @@ export const setupData={
 						"satus": "inprogress",
 						"sprintnumber": "",
 						"buildnumber": "12",
-						"starttime": "2021-01-11T09:47:53+0000Z",
-						"endtime": "2021-01-11T011:47:53+0000Z",
+						"startTime": "04/09/2020 14:00:00",
+						"endTime": "14/09/2020 16:20:30",
+						"installmode": "refresh_cd",
+						"milestones": [
+							{
+								"name": "preinstall",
+								"status": "completed",
+								"starttime": "2021-01-11T09:40:53+0000Z",
+								"endtime": "2021-01-11T09:47:53+0000Z"
+							},
+							{
+								"name": "dop-asm-setup.yml",
+								"status": "completed",
+								"starttime": "2021-01-11T09:40:53+0000Z",
+								"endtime": "2021-01-11T09:47:53+0000Z"
+							},
+							{
+								"name": "dop-p2cc-prepare.yml",
+								"status": "completed",
+								"starttime": "2021-01-11T09:40:53+0000Z",
+								"endtime": "2021-01-11T09:47:53+0000Z"
+							},
+							{
+								"name": "postinstall",
+								"status": "not started",
+								"starttime": "2021-01-11T09:40:53+0000Z",
+								"endtime": "2021-01-11T09:47:53+0000Z"
+							}
+						]
+					}
+				]
+			},
+			{
+				"type": "Dev",
+				"subtype": "odo",
+				"alias": "odo11d",
+				"deployments": [
+					{
+						"deploymentId": "abc3db60-1b64-4132-a9e0-57dc467ec111",
+						"satus": "inprogress",
+						"sprintnumber": "",
+						"buildnumber": "12",
+						"startTime": "04/09/2020 14:00:00",
+						"endTime": "14/09/2020 16:20:30",
 						"installmode": "refresh_cd",
 						"milestones": [
 							{
@@ -141,8 +183,8 @@ export const setupData={
 						"satus": "inprogress",
 						"sprintnumber": "",
 						"buildnumber": "10",
-						"starttime": "2021-01-11T09:47:53+0000Z",
-						"endtime": "2021-01-11T011:47:53+0000Z",
+						"startTime": "04/09/2020 14:00:00",
+						"endTime": "14/09/2020 16:20:30",
 						"installmode": "refresh_cd",
 						"milestones": [
 							{
@@ -183,8 +225,8 @@ export const setupData={
 						"satus": "inprogress",
 						"sprintnumber": "",
 						"buildnumber": "10",
-						"starttime": "2021-01-11T09:47:53+0000Z",
-						"endtime": "2021-01-11T011:47:53+0000Z",
+						"startTime": "04/09/2020 14:00:00",
+						"endTime": "14/09/2020 16:20:30",
 						"installmode": "refresh_cd",
 						"milestones": [
 							{
@@ -225,8 +267,8 @@ export const setupData={
 						"satus": "inprogress",
 						"sprintnumber": "",
 						"buildnumber": "10",
-						"starttime": "2021-01-11T09:47:53+0000Z",
-						"endtime": "2021-01-11T011:47:53+0000Z",
+						"startTime": "04/09/2020 14:00:00",
+						"endTime": "14/09/2020 16:20:30",
 						"installmode": "refresh_cd",
 						"milestones": [
 							{
@@ -267,8 +309,8 @@ export const setupData={
 						"satus": "inprogress",
 						"sprintnumber": "",
 						"buildnumber": "10",
-						"starttime": "2021-01-11T09:47:53+0000Z",
-						"endtime": "2021-01-11T011:47:53+0000Z",
+						"startTime": "04/09/2020 14:00:00",
+						"endTime": "14/09/2020 16:20:30",
 						"installmode": "refresh_cd",
 						"milestones": [
 							{
@@ -309,8 +351,8 @@ export const setupData={
 						"satus": "inprogress",
 						"sprintnumber": "",
 						"buildnumber": "10",
-						"starttime": "2021-01-11T09:47:53+0000Z",
-						"endtime": "2021-01-11T011:47:53+0000Z",
+						"startTime": "04/09/2020 14:00:00",
+						"endTime": "14/09/2020 16:20:30",
 						"installmode": "refresh_cd",
 						"milestones": [
 							{
@@ -351,8 +393,8 @@ export const setupData={
 						"satus": "inprogress",
 						"sprintnumber": "",
 						"buildnumber": "10",
-						"starttime": "2021-01-11T09:47:53+0000Z",
-						"endtime": "2021-01-11T011:47:53+0000Z",
+						"startTime": "04/09/2020 14:00:00",
+						"endTime": "14/09/2020 16:20:30",
 						"installmode": "refresh_cd",
 						"milestones": [
 							{
