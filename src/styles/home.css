@@ -6,11 +6,32 @@
     padding-top: 5rem;
 }
 
+.accordion{
+    background-color: rgba(255, 255, 255, 0) !important;
+}
 
+.acc-body{
+    background-color: rgba(255, 255, 255, 0) !important;
+}
 
+.card-header{
+    background-color: rgba(255,255,255,1) !important;
+}
+
+.accordion>.card{
+    overflow: inherit !important;
+}
 
 /* SetupCards */
 
 .label{
     font-weight: 600;
+}
+
+.border-secondary{
+    border-color: rgba(0,0,0,0.2) !important;
+}
+
+.refresh_img{
+    left: 0px;
 }

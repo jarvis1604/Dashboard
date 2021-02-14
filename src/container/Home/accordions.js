@@ -18,7 +18,7 @@ class AccDropdown extends Component {
                 <Accordion defaultActiveKey="0">
                     {
                         unique && unique.map((item, index) => 
-                        <Card key={index}>
+                        <Card className="acc-body" key={index}>
                             <Accordion.Toggle as={Card.Header} eventKey={index+1}>
                             {item}
                             </Accordion.Toggle>

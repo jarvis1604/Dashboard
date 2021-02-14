@@ -1,12 +1,13 @@
 import React from 'react';
 import {Navbar, Nav, NavDropdown, Container, Button} from 'react-bootstrap';
 import {NavLink, Link} from 'react-router-dom';
+import logo from './../../images/Primary-Green-CMYK.png';
 
 const Header = () =>  {
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Container>
-                {/* <Navbar.Brand href="#home">Admin Dashboard</Navbar.Brand> */}
+        <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+            <Container fluid>
+                <Navbar.Brand href="#home"><img src={logo} alt="Unable to load"/></Navbar.Brand>
                 <Link to="/" className="navbar-brand">Deployment Status Check</Link>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">

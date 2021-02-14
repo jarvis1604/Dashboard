@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import { Card, Row, Col, ProgressBar } from 'react-bootstrap';
 import './../../../styles/home.css';
 import moment from 'moment';
-
-
+import refresh_img from './../../../images/refresh.png';
+import {Link} from 'react-router-dom';
 
 
 const SetupCards = (props) => {
@@ -55,7 +55,12 @@ const SetupCards = (props) => {
                 <div>
                     <Col sm={3} key={index}>
                     <Card border="secondary" style={{ width: '20rem', margin:'0.5rem' }} >
-                    <Card.Header><h5>{setupData.type}</h5></Card.Header>
+                    <Card.Header>
+                        <Row>
+                            <Col md={4}><h5>{setupData.type}</h5></Col>
+                            <Col md={{ span: 2, offset: 6 }}><Link to="#"><img src={refresh_img} alt="unable to load" width="20px" height="20px"/></Link></Col>
+                        </Row>
+                    </Card.Header>
                     <Card.Body>
                         <Row>
                             <Col sm={6} className="label">Build No.</Col>
