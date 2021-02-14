@@ -9,8 +9,6 @@ const Home = () => {
     return (
         <div>
             <Layout>
-
-
                 <AccDropdown/>
             </Layout>
         </div>

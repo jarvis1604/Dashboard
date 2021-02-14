@@ -13,9 +13,6 @@ class AccDropdown extends Component {
         const unique = [...new Set(setData.map(item => item.type))];
         console.log('Unique Setups: ', unique);
 
-        // const result = setData.filter(data => data.type == 'Dev');
-        // console.log('Filtered Data: ', result);
-
         return(
             <div className="acc-container">
                 <Accordion defaultActiveKey="0">
@@ -26,7 +23,7 @@ class AccDropdown extends Component {
                             {item}
                             </Accordion.Toggle>
                             <Accordion.Collapse eventKey={index+1}>
-                                <div style={{padding:'0px'}}>
+                                <div style={{padding:'2rem 0'}}>
                                     <SetupCards data={setData.filter(data => data.type == item)} />
                                 </div>
                                 
