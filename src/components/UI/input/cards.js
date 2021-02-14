@@ -12,7 +12,7 @@ const SetupCards = (props) => {
     const dateTimeDifference = (datetime) => {
         console.log("Inside Date Time");
         var arr = moment.utc(moment(datetime.endTime, "DD/MM/YYYY HH:mm:ss").diff(moment(datetime.startTime, "DD/MM/YYYY HH:mm:ss"))).format("DD HH:mm:ss").split(" ");
-        const DT = arr[0] - 1 + " days, " + arr[1];
+        const DT =  arr[1];
         return DT;
     }
 
